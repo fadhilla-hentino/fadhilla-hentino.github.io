@@ -70,7 +70,7 @@
 	.header-inner {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		gap: 2rem;
 		max-width: var(--max-width);
 		min-height: var(--header-height);
@@ -144,6 +144,7 @@
 		.header-inner {
 			position: relative;
 			flex-wrap: wrap;
+			justify-content: flex-end;
 			gap: 0;
 		}
 

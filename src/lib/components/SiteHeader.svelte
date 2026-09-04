@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { navigationItems, profile } from '$lib/content/profile';
+	import { navigationItems } from '$lib/content/profile';
 
 	let menuOpen = false;
 	let activeSection = 'top';

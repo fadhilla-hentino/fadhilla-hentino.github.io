@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import ImpactCard from '$lib/components/ImpactCard.svelte';
 	import SectionHeading from '$lib/components/SectionHeading.svelte';
 	import SiteHeader from '$lib/components/SiteHeader.svelte';
@@ -23,7 +24,7 @@
 		<div class="hero-inner">
 			<div class="portrait-frame">
 				<span aria-hidden="true">FEH</span>
-				<img src="/profile-portrait.webp" alt="Fadhilla Eka Hentino" />
+				<img src={`${base}/profile-portrait.webp`} alt="Fadhilla Eka Hentino" />
 			</div>
 			<p class="eyebrow">{profile.role}</p>
 			<h1 id="hero-heading">{profile.name}</h1>

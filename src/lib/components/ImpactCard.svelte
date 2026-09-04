@@ -30,10 +30,10 @@
 
 <style>
 	.card {
-		display: flex;
-		flex-direction: column;
-		min-height: 100%;
-		padding: clamp(1.5rem, 3vw, 2.25rem) 0;
+		display: grid;
+		grid-template-columns: minmax(13rem, 0.8fr) minmax(0, 1.4fr);
+		gap: clamp(2rem, 6vw, 6rem);
+		padding: clamp(2rem, 5vw, 4rem) 0;
 		border-top: 1px solid var(--line);
 	}
 
@@ -45,7 +45,7 @@
 
 	h3 {
 		max-width: 20ch;
-		margin: var(--space-3) 0 var(--space-4);
+		margin: var(--space-3) 0 0;
 		font-family: Georgia, 'Times New Roman', serif;
 		font-size: clamp(1.5rem, 2.5vw, 2rem);
 		font-weight: 500;
@@ -75,6 +75,7 @@
 	}
 
 	ul {
+		grid-column: 2;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.5rem;
@@ -89,5 +90,17 @@
 		border: 1px solid var(--line);
 		color: var(--sea-blue-dark);
 		font-size: 0.74rem;
+	}
+
+	@media (max-width: 48rem) {
+		.card {
+			grid-template-columns: 1fr;
+			gap: var(--space-3);
+		}
+
+		ul {
+			grid-column: 1;
+			margin-top: 0;
+		}
 	}
 </style>

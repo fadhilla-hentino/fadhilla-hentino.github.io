@@ -21,7 +21,7 @@
 	.system-map {
 		width: min(100%, 38rem);
 		margin-inline: auto;
-		color: var(--sea-blue);
+		color: inherit;
 	}
 
 	svg {

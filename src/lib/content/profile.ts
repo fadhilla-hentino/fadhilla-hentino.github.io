@@ -24,6 +24,22 @@ export type EducationEntry = {
 	period: string;
 };
 
+export type NavigationItem = {
+	href: string;
+	label: string;
+	sectionId: string;
+};
+
+export const navigationItems: NavigationItem[] = [
+	{ href: '#top', label: 'Home', sectionId: 'top' },
+	{ href: '#about', label: 'About', sectionId: 'about' },
+	{ href: '#experience', label: 'Resume', sectionId: 'experience' },
+	{ href: '#work', label: 'Selected Work', sectionId: 'work' },
+	{ href: '#practice', label: 'Practice', sectionId: 'practice' },
+	{ href: '#education', label: 'Education', sectionId: 'education' },
+	{ href: '#contact', label: 'Contact', sectionId: 'contact' }
+];
+
 export const profile = {
 	name: 'Fadhilla Eka Hentino',
 	role: 'Engineering Manager · Game Backend & Platform Engineering',

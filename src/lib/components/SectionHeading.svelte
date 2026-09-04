@@ -16,6 +16,8 @@
 <style>
 	.section-heading {
 		max-width: 44rem;
+		margin-inline: auto;
+		text-align: center;
 	}
 
 	p {
@@ -28,8 +30,9 @@
 	}
 
 	h2 {
-		max-width: 13ch;
+		max-width: 18ch;
 		margin: 0;
+		margin-inline: auto;
 		font-family: Georgia, 'Times New Roman', serif;
 		font-size: clamp(2rem, 4vw, 3.4rem);
 		font-weight: 500;

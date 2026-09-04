@@ -32,8 +32,6 @@
 
 <header class="site-header" class:enhanced>
 	<div class="header-inner">
-		<a class="wordmark" href="#top" aria-label="{profile.name}, home">Fadhilla<span>.</span></a>
-
 		<button
 			class="menu-button"
 			type="button"
@@ -86,19 +84,6 @@
 		font-weight: 700;
 		letter-spacing: 0.02em;
 		text-decoration: none;
-	}
-
-	.wordmark {
-		flex: none;
-		font-family: Georgia, 'Times New Roman', serif;
-		font-size: 1.35rem;
-		letter-spacing: -0.04em;
-	}
-
-	.wordmark span,
-	nav a:hover,
-	nav a[aria-current='location'] {
-		color: var(--mint);
 	}
 
 	nav {
